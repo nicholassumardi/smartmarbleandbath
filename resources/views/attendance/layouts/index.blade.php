@@ -1,0 +1,5 @@
+@include('attendance.layouts.head', $data)
+@include('attendance.layouts.header', $data)
+@include('attendance.layouts.sidebar', $data)
+@include($data['content'], $data)
+@include('attendance.layouts.footer', $data)

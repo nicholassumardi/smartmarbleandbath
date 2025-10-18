@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /*
+Disallow: /checkout/
+Disallow: /account/wishlist/
+Disallow: /account/cart/
+Disallow: /account/history_order/
+Disallow: /account/points/
+Disallow: /admin/
+Host: https://pusatgranitetiles.com/

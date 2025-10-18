@@ -1,0 +1,1 @@
+Dear Sir/ Madam, we would like to request a quote from your company. Please inform us price and stock availability for products below.

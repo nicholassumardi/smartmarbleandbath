@@ -1,0 +1,10 @@
+[15-Sep-2021 01:51:12 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 27872 bytes failed with errno=12 Cannot allocate memory in /home/smartmar/public_html/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/smartmar/public_html/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/smartmar/...', 444, Array)
+#1 /home/smartmar/public_html/vendor/composer/ClassLoader.php(444): include()
+#2 /home/smartmar/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/smartmar/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\L...')
+#4 /home/smartmar/public_html/vendor/nesbot/carbon/src/Carbon/Traits/Options.php(26): spl_autoload_call('Carbon\\Traits\\L...')
+#5 /home/smartmar/public_html/vendor/composer/ClassLoader.php(444): include('/home/smartmar/...')
+#6 /home/smartmar/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/smartmar/...')
+#7  in /home/smartmar/public_html/vendor/nesbot/carbon/src/Carbon/Traits/Options.php on line 26

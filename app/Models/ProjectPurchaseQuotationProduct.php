@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class ProjectPurchaseQuotationProduct extends Model
+{
+    use HasFactory;
+    protected $table      = 'project_purchase_quotation_products';
+	protected $primaryKey = 'id';
+	protected $fillable   = [
+		'project_purchase_quotation_id',
+		'product_id',
+		'unit',
+		'remark',
+	];
+
+    public function projectPurchaseQuotation(){
+		return $this->belongsTo('App\Models\ProjectPurchaseQuotation');
+	}
+
+    public function product(){
+		return $this->belongsTo('App\Models\Product');
+	}
+	
+}
